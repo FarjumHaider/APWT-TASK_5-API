@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <title></title>
+</head>
+<body>
+    <div class="form form-control" >
+        <form action="http://127.0.0.1:8000/api/product/create" method="post" enctype="multipart/form-data" >
+
+        
+            <div class="col-md-4 form-group">
+                <span>Product Name</span>
+                <input type="text" name="name"  class="form-control">
+    
+            </div>
+            <div class="col-md-4 form-group">
+                <span>Product code</span>
+                <input type="text" name="pcode" class="form-control">
+    
+            </div>
+            <div class="col-md-4 form-group">
+                <span>Product description</span>
+                <input type="text" name="pdes"  class="form-control">
+    
+            </div>
+            <div class="col-md-4 form-group">
+                <span>Product category</span>
+                <select name="category" id="category" >
+                    <option value="Select a category" class="form-control">Select a Category</option>
+                    <option value="TV" class="form-control">TV</option>
+                    <option value="Laptop" class="form-control">Laptop</option>
+                    <option value="Computer" class="form-control">Computer</option>
+                   
+                  </select><br>
+    
+    
+            </div>
+            <div class="col-md-4 form-group">
+                <span>Product Price</span>
+                <input type="text" name="price"  class="form-control">
+    
+            </div>
+            <div class="col-md-4 form-group">
+                <span>Product quantity</span>
+                <input name="quantity" type=text  class="form-control">
+    
+            </div>
+            <div class="col-md-4 form-group">
+                <span>Product stock date</span>
+                <input type="date" name="stockDate" " class="form-control">
+    
+            </div>
+            <div class="col-md-4 form-group">
+                <span>Product rating</span><br>
+                <input type="radio" id="valOne" name="rating" value="1">
+                <label for="valOne">1 </label><br>
+                <input type="radio" id="valtwo" name="rating" value="2">
+                <label for="valtwo">2</label><br>
+                <input type="radio" id="valthree" name="rating" value="3">
+                <label for="valthree">3 </label><br>
+                <input type="radio" id="valfour" name="rating" value="4">
+                <label for="valfour">4 </label><br>
+                <input type="radio" id="valfive" name="rating" value="5">
+                <label for="valfive">5 </label><br>
+    
+            </div>
+            <div class="col-md-4 form-group">
+                <span>Product purcased</span>
+                <input type="text" name="purchased" class="form-control">
+    
+            </div>
+            <br>
+            <input type="submit" class="btn btn-success" value="Add" >
+        </form>
+
+    </div>
+    
+</body>
+</html>
+
